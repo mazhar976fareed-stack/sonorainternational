@@ -764,6 +764,122 @@ footer a:hover { color: var(--gold); }
     bottom: 15px;
   }
 }
+  
+/* DIRECTOR PROFILE DESIGN */
+
+.director-section {
+  padding: 90px 0;
+  background: #f4f7fb;
+}
+
+.director-card {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px #10243a15;
+}
+
+.director-photo {
+  min-height: 450px;
+  background: #10243a;
+}
+
+.director-photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.director-content {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.director-tag {
+  color: #1769aa;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.director-content h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #10243a;
+  margin-bottom: 10px;
+}
+
+.director-role {
+  color: #b68a35;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.director-content p {
+  color: #5c6b7d;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.director-line {
+  width: 60px;
+  height: 3px;
+  background: #d6a84f;
+  margin-bottom: 25px;
+}
+
+.director-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 25px;
+}
+
+.director-badges span {
+  background: #edf4fb;
+  color: #173d60;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+@media (max-width: 750px) {
+  .director-card {
+    grid-template-columns: 1fr;
+  }
+
+  .director-photo {
+    height: 380px;
+    min-height: 0;
+  }
+
+  .director-photo img {
+    height: 100%;
+    min-height: 0;
+    object-position: center 20%;
+  }
+
+  .director-content {
+    padding: 30px 25px;
+  }
+
+  .director-content h2 {
+    font-size: 28px;
+  }
+}
 </style>
 </head>
 
@@ -1165,6 +1281,89 @@ footer a:hover { color: var(--gold); }
     </a>
   </div>
 </section>
+  
+<!-- DIRECTOR PROFILE SECTION -->
+
+<section class="director-section" id="director">
+
+  <div class="container">
+
+    <div class="center">
+      <div class="eyebrow">Our Leadership</div>
+
+      <h2 class="section-title">
+        Meet Our Director
+      </h2>
+
+      <p class="section-desc">
+        Meet the leadership behind Sonora International.
+      </p>
+    </div>
+
+    <div class="director-card">
+
+      <!-- DIRECTOR IMAGE -->
+
+      <div class="director-photo">
+        <img
+          src="director.jpg"
+          alt="Sonora International Director">
+      </div>
+
+      <!-- DIRECTOR INFORMATION -->
+
+      <div class="director-content">
+
+        <div class="director-tag">
+          Sonora International
+        </div>
+
+        <h2>YOUR NAME</h2>
+
+        <div class="director-role">
+          Director | Sonora International
+        </div>
+
+        <div class="director-line"></div>
+
+        <p>
+          Welcome to Sonora International. We are
+          committed to building strong international
+          business relationships and connecting buyers
+          and suppliers across global markets.
+        </p>
+
+        <p>
+          Our business specializes in import and export
+          opportunities across a diverse range of products,
+          including scissors and razors, surgical instruments,
+          leather products, optical lenses and frames,
+          and memory cards.
+        </p>
+
+        <p>
+          We focus on professional communication,
+          business coordination and developing
+          long-term international partnerships.
+        </p>
+
+        <div class="director-badges">
+          <span>Import & Export</span>
+          <span>Global Trade</span>
+          <span>Business Development</span>
+        </div>
+
+        <a href="#contact" class="btn btn-blue">
+          Contact Our Team →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1288,6 +1487,7 @@ footer a:hover { color: var(--gold); }
         <h4>Quick Links</h4>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
+        <a href="#director">Profile</a>
         <a href="#products">Our Products</a>
         <a href="#services">Our Services</a>
         <a href="#contact">Contact Us</a>
