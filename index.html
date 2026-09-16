@@ -1,0 +1,1403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sonora International | Global Import & Export</title>
+<meta name="description" content="Sonora International connects global buyers and suppliers through import, export and product sourcing services. Explore scissors, surgical instruments, leather goods, optical products and memory cards.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #10243a;
+  --navy2: #173d60;
+  --blue: #1769aa;
+  --gold: #d6a84f;
+  --light: #f4f7fb;
+  --text: #5c6b7d;
+  --white: #fff;
+  --border: #e3eaf1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  color: var(--navy);
+  line-height: 1.7;
+  background: white;
+}
+
+a { text-decoration: none; color: inherit; }
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: min(1160px, 90%);
+  margin: auto;
+}
+
+section { padding: 90px 0; }
+
+.eyebrow {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin-bottom: 15px;
+}
+
+.section-desc {
+  color: var(--text);
+  font-size: 15px;
+  max-width: 650px;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.center .section-desc { margin: auto; }
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--gold);
+  color: var(--navy);
+  border: 1px solid var(--gold);
+  transition: .25s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e7bc67;
+  transform: translateY(-2px);
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
+.btn-blue:hover {
+  background: var(--navy);
+}
+
+/* TOP BAR */
+
+.topbar {
+  background: #0a1929;
+  color: #d9e4ef;
+  font-size: 11px;
+  padding: 9px 0;
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* HEADER */
+
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 20px #10243a0c;
+}
+
+.navbar {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 48px;
+  height: 48px;
+  background: var(--navy);
+  color: var(--gold);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 29px;
+  font-weight: 800;
+  border: 2px solid var(--gold);
+}
+
+.logo-name {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.logo-name small {
+  display: block;
+  font-size: 10px;
+  color: var(--blue);
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.nav-links a {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-links a:hover { color: var(--blue); }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  padding: 9px 12px;
+  font-size: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(90deg, #0b1b2df5 0%, #10243ad9 48%, #10243a55 100%),
+    url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+}
+
+.hero-content {
+  max-width: 720px;
+  padding: 90px 0;
+}
+
+.hero .eyebrow { color: var(--gold); }
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.12;
+  letter-spacing: -2.5px;
+  margin-bottom: 24px;
+}
+
+.hero h1 span { color: var(--gold); }
+
+.hero p {
+  color: #dbe5ef;
+  font-size: 16px;
+  max-width: 590px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-outline {
+  color: white;
+  background: transparent;
+  border-color: #ffffff80;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--navy);
+}
+
+.hero-trust {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  font-size: 12px;
+  color: #dce6f0;
+}
+
+/* TRUST BAR */
+
+.trust-bar {
+  background: var(--light);
+  border-bottom: 1px solid var(--border);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-item {
+  text-align: center;
+  padding: 25px 12px;
+  border-right: 1px solid var(--border);
+}
+
+.trust-item:last-child { border: 0; }
+
+.trust-item strong {
+  display: block;
+  font-size: 14px;
+}
+
+.trust-item span {
+  color: var(--text);
+  font-size: 12px;
+}
+
+/* PRODUCTS */
+
+.products { background: white; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px #10243a12;
+}
+
+.product-image {
+  height: 230px;
+  overflow: hidden;
+  background: var(--light);
+}
+
+.product-image img {
+  height: 100%;
+  transition: transform .4s;
+}
+
+.product-card:hover img { transform: scale(1.05); }
+
+.product-info { padding: 25px; }
+
+.product-number {
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.product-info h3 {
+  font-size: 20px;
+  margin: 8px 0 10px;
+}
+
+.product-info p {
+  font-size: 13px;
+  color: var(--text);
+  min-height: 66px;
+}
+
+.product-link {
+  display: inline-block;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+/* ABOUT */
+
+.about { background: var(--light); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.about-image {
+  position: relative;
+  min-height: 420px;
+}
+
+.about-image img {
+  height: 420px;
+  border-radius: 10px;
+}
+
+.about-badge {
+  position: absolute;
+  bottom: 20px;
+  right: -20px;
+  background: white;
+  padding: 20px 25px;
+  border-left: 4px solid var(--gold);
+  box-shadow: 0 8px 30px #10243a18;
+}
+
+.about-badge strong {
+  display: block;
+  font-size: 16px;
+}
+
+.about-badge span {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.about-copy p {
+  color: var(--text);
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.check-list {
+  list-style: none;
+  margin: 24px 0;
+}
+
+.check-list li {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.check-list li::before {
+  content: "✓";
+  color: var(--blue);
+  font-weight: 800;
+  margin-right: 12px;
+}
+
+/* SERVICES */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.service-card {
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: .25s;
+}
+
+.service-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 10px 30px #10243a0b;
+}
+
+.service-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  background: #e8f2fc;
+  color: var(--blue);
+  border-radius: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 13px;
+  color: var(--text);
+}
+
+/* PROCESS */
+
+.process {
+  background: var(--navy);
+  color: white;
+}
+
+.process .section-desc { color: #c4d1df; }
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.process-step {
+  border-top: 1px solid #ffffff40;
+  padding-top: 25px;
+}
+
+.process-step strong {
+  display: block;
+  color: var(--gold);
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.process-step h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  color: #c4d1df;
+  font-size: 13px;
+}
+
+/* CONTACT CTA */
+
+.cta {
+  background: #eaf3fc;
+  padding: 65px 0;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cta h2 {
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+/* CONTACT */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 60px;
+}
+
+.contact-copy p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.contact-detail {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-detail strong {
+  display: block;
+  font-size: 13px;
+}
+
+.contact-detail span {
+  color: var(--text);
+  font-size: 13px;
+}
+
+form {
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 10px 40px #10243a08;
+}
+
+form h3 {
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 17px;
+  border: 1px solid #dce4ed;
+  border-radius: 5px;
+  background: white;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--blue);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button { width: 100%; }
+
+.form-note {
+  font-size: 11px;
+  color: var(--text);
+  margin-top: 12px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0a1929;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 35px;
+  padding-bottom: 40px;
+}
+
+.footer-about p {
+  color: #b9c7d6;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+footer h4 {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+footer .footer-links a {
+  display: block;
+  color: #b9c7d6;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+footer a:hover { color: var(--gold); }
+
+.footer-bottom {
+  border-top: 1px solid #ffffff20;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #9eafc1;
+  font-size: 11px;
+}
+
+/* WHATSAPP FLOAT BUTTON */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 90;
+  background: #20b95a;
+  color: white;
+  padding: 13px 19px;
+  border-radius: 50px;
+  box-shadow: 0 6px 25px #0002;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 12px; }
+
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .about-grid, .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 650px) {
+  section { padding: 65px 0; }
+
+  .topbar-inner { justify-content: center; text-align: center; }
+
+  .navbar { min-height: 72px; }
+
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 22px 5%;
+    box-shadow: 0 10px 20px #10243a15;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .nav-links.active { display: flex; }
+
+  .nav-links a { font-size: 14px; }
+
+  .hero { min-height: 520px; }
+
+  .hero-content { padding: 65px 0; }
+
+  .hero h1 {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero p { font-size: 14px; }
+
+  .hero-trust { gap: 12px; }
+
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .trust-item:nth-child(2) { border-right: 0; }
+
+  .product-grid, .services-grid,
+  .process-grid, .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img { height: 300px; }
+
+  .about-image { min-height: 300px; }
+
+  .about-badge { right: 10px; }
+
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+
+  form { padding: 23px; }
+
+  .whatsapp-float {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>✉ info@yourcompany.com</span>
+    <span>☎ +92 XXX XXXXXXX</span>
+    <span>Global Trade | Worldwide</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+      <div class="logo-mark">S</div>
+      <div class="logo-name">
+        SONORA
+        <small>INTERNATIONAL</small>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-blue">Get a Quote ↗</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+
+      <div class="eyebrow">Welcome to Sonora International</div>
+
+      <h1>
+        Connecting Markets.<br>
+        Building <span>Global Trust.</span>
+      </h1>
+
+      <p>
+        Your business partner for international import and export.
+        We connect buyers and suppliers with diverse products,
+        professional trade coordination and sourcing solutions.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#products" class="btn">Explore Our Products →</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+
+      <div class="hero-trust">
+        <span>✓ Diverse Product Categories</span>
+        <span>✓ Global Trade Solutions</span>
+        <span>✓ Business-Focused Service</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar" id="why-us">
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <strong>Quality-Focused</strong>
+      <span>Product specifications</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Global Connections</strong>
+      <span>Buyers & suppliers</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Trade Coordination</strong>
+      <span>Business communication</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Customer Support</strong>
+      <span>Inquiry-based assistance</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+
+    <div class="center">
+      <div class="eyebrow">Our Product Range</div>
+      <h2 class="section-title">Featured Product Categories</h2>
+      <p class="section-desc">
+        Explore our product categories for international
+        sourcing, wholesale and business inquiries.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <div class="product-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1583407723467-9b2d22504831?auto=format&fit=crop&w=900&q=85"
+            alt="Scissors and razors">
+        </div>
+        <div class="product-info">
+          <span class="product-number">CATEGORY 01</span>
+          <h3>Scissors & Razors</h3>
+          <p>
+            Scissors, razors and cutting tools for personal care,
+            professional use and commercial markets.
+          </p>
+          <a class="product-link" href="#contact"
+             data-product="Scissors & Razors">
+            View Details →
+          </a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=900&q=85"
+            alt="Surgical and medical instruments">
+        </div>
+        <div class="product-info">
+          <span class="product-number">CATEGORY 02</span>
+          <h3>Surgical Instruments</h3>
+          <p>
+            Surgical and medical instruments for healthcare
+            suppliers and professional medical markets.
+          </p>
+          <a class="product-link" href="#contact"
+             data-product="Surgical Instruments">
+            View Details →
+          </a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85"
+            alt="Leather goods and accessories">
+        </div>
+        <div class="product-info">
+          <span class="product-number">CATEGORY 03</span>
+          <h3>Leather Products</h3>
+          <p>
+            Leather goods and accessories for wholesale,
+            retail and international business requirements.
+          </p>
+          <a class="product-link" href="#contact"
+             data-product="Leather Products">
+            View Details →
+          </a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85"
+            alt="Optical lenses and frames">
+        </div>
+        <div class="product-info">
+          <span class="product-number">CATEGORY 04</span>
+          <h3>Optical Lenses & Frames</h3>
+          <p>
+            Optical frames, eyewear accessories and lenses
+            for optical retailers and distributors.
+          </p>
+          <a class="product-link" href="#contact"
+             data-product="Optical Lenses & Frames">
+            View Details →
+          </a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=85"
+            alt="Memory cards and digital storage">
+        </div>
+        <div class="product-info">
+          <span class="product-number">CATEGORY 05</span>
+          <h3>Memory Cards</h3>
+          <p>
+            Digital storage products for electronics,
+            retail and distribution business markets.
+          </p>
+          <a class="product-link" href="#contact"
+             data-product="Memory Cards">
+            View Details →
+          </a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=900&q=85"
+            alt="International shipping and logistics">
+        </div>
+        <div class="product-info">
+          <span class="product-number">CATEGORY 06</span>
+          <h3>Custom Sourcing</h3>
+          <p>
+            Contact us for additional product sourcing
+            and international trade requirements.
+          </p>
+          <a class="product-link" href="#contact"
+             data-product="Custom Sourcing">
+            Send Inquiry →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-image">
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1100&q=85"
+        alt="Global logistics and warehouse operations">
+
+      <div class="about-badge">
+        <strong>Sonora International</strong>
+        <span>Your Partner in Global Trade</span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <div class="eyebrow">About Our Company</div>
+
+      <h2 class="section-title">
+        Your Partner in International Trade
+      </h2>
+
+      <p>
+        Sonora International is an import and export business
+        focused on connecting buyers and suppliers across
+        international markets.
+      </p>
+
+      <p>
+        Our product portfolio includes scissors and razors,
+        surgical instruments, leather products, optical lenses
+        and frames, and memory cards.
+      </p>
+
+      <p>
+        We aim to support business customers through clear
+        communication, product sourcing and trade coordination.
+      </p>
+
+      <ul class="check-list">
+        <li>Multiple product categories</li>
+        <li>Product sourcing and inquiry support</li>
+        <li>Professional business communication</li>
+        <li>Long-term business relationship focus</li>
+      </ul>
+
+      <a href="#contact" class="btn btn-blue">
+        Learn More About Us →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+
+    <div class="center">
+      <div class="eyebrow">Our Services</div>
+      <h2 class="section-title">How We Help Your Business</h2>
+      <p class="section-desc">
+        Business-focused services to support your product
+        sourcing and international trade requirements.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🌍</div>
+        <h3>Import & Export</h3>
+        <p>
+          International trade inquiries and coordination
+          between buyers and suppliers.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📦</div>
+        <h3>Product Sourcing</h3>
+        <p>
+          Assistance with product requirements,
+          specifications and sourcing inquiries.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <h3>Business Partnerships</h3>
+        <p>
+          Connecting with wholesalers, distributors
+          and international business customers.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+
+    <div class="center">
+      <div class="eyebrow">Our Work Process</div>
+      <h2 class="section-title">Simple. Clear. Professional.</h2>
+      <p class="section-desc">
+        A straightforward process to discuss your business
+        and product requirements.
+      </p>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-step">
+        <strong>01</strong>
+        <h3>Send an Inquiry</h3>
+        <p>Tell us which product you need and your required quantity.</p>
+      </div>
+
+      <div class="process-step">
+        <strong>02</strong>
+        <h3>Discuss Requirements</h3>
+        <p>Discuss specifications, destination and trade requirements.</p>
+      </div>
+
+      <div class="process-step">
+        <strong>03</strong>
+        <h3>Receive a Quotation</h3>
+        <p>Review the proposed pricing and agreed trade terms.</p>
+      </div>
+
+      <div class="process-step">
+        <strong>04</strong>
+        <h3>Coordinate the Order</h3>
+        <p>Proceed with order coordination under agreed terms.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container cta-inner">
+    <div>
+      <div class="eyebrow">Let's Work Together</div>
+      <h2>Ready for Your Next Business Opportunity?</h2>
+      <p>Contact us to discuss your sourcing and trade requirements.</p>
+    </div>
+
+    <a href="#contact" class="btn">
+      Contact Our Team →
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container contact-grid">
+
+    <div class="contact-copy">
+      <div class="eyebrow">Contact Us</div>
+
+      <h2 class="section-title">
+        Let's Discuss Your Business Requirements
+      </h2>
+
+      <p>
+        Looking for products, suppliers or an international
+        trade partner? Send us your inquiry.
+      </p>
+
+      <div class="contact-detail">
+        <strong>Company</strong>
+        <span>Sonora International</span>
+      </div>
+
+      <div class="contact-detail">
+        <strong>Email</strong>
+        <span>YOUR_EMAIL@example.com</span>
+      </div>
+
+      <div class="contact-detail">
+        <strong>Phone / WhatsApp</strong>
+        <span>+92 XXX XXXXXXX</span>
+      </div>
+
+      <div class="contact-detail">
+        <strong>Office Location</strong>
+        <span>Your City, Pakistan</span>
+      </div>
+    </div>
+
+    <form id="inquiryForm">
+      <h3>Send a Business Inquiry</h3>
+
+      <div class="form-row">
+        <div>
+          <label for="name">Full Name *</label>
+          <input id="name" name="name"
+            placeholder="Your full name" required>
+        </div>
+
+        <div>
+          <label for="company">Company Name</label>
+          <input id="company" name="company"
+            placeholder="Your company">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="email">Email Address *</label>
+          <input id="email" name="email"
+            type="email" placeholder="name@example.com" required>
+        </div>
+
+        <div>
+          <label for="country">Country</label>
+          <input id="country" name="country"
+            placeholder="Your country">
+        </div>
+      </div>
+
+      <label for="product">Product Category *</label>
+      <select id="product" name="product" required>
+        <option value="">Choose a product</option>
+        <option>Scissors & Razors</option>
+        <option>Surgical Instruments</option>
+        <option>Leather Products</option>
+        <option>Optical Lenses & Frames</option>
+        <option>Memory Cards</option>
+        <option>Custom Sourcing</option>
+      </select>
+
+      <label for="message">Your Requirements *</label>
+      <textarea id="message" name="message"
+        placeholder="Product, quantity, destination and other details..."
+        required></textarea>
+
+      <button class="btn btn-blue" type="submit">
+        Send Inquiry via Email →
+      </button>
+
+      <p class="form-note">
+        Your email application will open with your inquiry details.
+      </p>
+    </form>
+
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-about">
+        <a href="#home" class="logo">
+          <div class="logo-mark">S</div>
+          <div class="logo-name" style="color:white">
+            SONORA
+            <small style="color:#d6a84f">INTERNATIONAL</small>
+          </div>
+        </a>
+
+        <p>
+          Connecting businesses through international
+          import, export and product sourcing solutions.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Our Products</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Our Products</h4>
+        <a href="#products">Scissors & Razors</a>
+        <a href="#products">Surgical Instruments</a>
+        <a href="#products">Leather Products</a>
+        <a href="#products">Optical Products</a>
+        <a href="#products">Memory Cards</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="#contact">Business Inquiries</a>
+        <a href="#contact">Product Sourcing</a>
+        <a href="#contact">Import & Export</a>
+        <a href="#contact">Partnerships</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Sonora International.
+        All rights reserved.
+      </span>
+      <span>Import • Export • Global Trade</span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   id="whatsappButton"
+   href="https://wa.me/923000000000"
+   target="_blank"
+   rel="noopener noreferrer">
+  WhatsApp Us ↗
+</a>
+
+<script>
+/* MOBILE MENU */
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function() {
+  const isOpen = navLinks.classList.toggle("active");
+  menuToggle.setAttribute("aria-expanded", isOpen);
+  menuToggle.textContent = isOpen ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navLinks.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+/* CURRENT YEAR */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+/* PRODUCT INQUIRY */
+
+document.querySelectorAll("[data-product]").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.getElementById("product").value =
+      link.dataset.product;
+  });
+});
+
+/* EMAIL INQUIRY FORM */
+
+document.getElementById("inquiryForm").addEventListener(
+  "submit",
+  function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    const subject = encodeURIComponent(
+      "Business Inquiry - " + formData.get("product")
+    );
+
+    const body = encodeURIComponent(
+      "Name: " + formData.get("name") +
+      "\nCompany: " + formData.get("company") +
+      "\nEmail: " + formData.get("email") +
+      "\nCountry: " + formData.get("country") +
+      "\nProduct: " + formData.get("product") +
+      "\nRequirements: " + formData.get("message")
+    );
+
+    /* CHANGE THIS TO YOUR REAL BUSINESS EMAIL */
+    const businessEmail = "YOUR_EMAIL@example.com";
+
+    window.location.href =
+      "mailto:" + businessEmail +
+      "?subject=" + subject +
+      "&body=" + body;
+  }
+);
+</script>
+
+</body>
+</html>
